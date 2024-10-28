@@ -133,7 +133,10 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+      "cron": {
+        "* * * * *": "notification.notify.send_notification",
+    },
 # 	"all": [
 # 		"notification.tasks.all"
 # 	],
@@ -149,7 +152,7 @@ app_license = "mit"
 # 	"monthly": [
 # 		"notification.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------
